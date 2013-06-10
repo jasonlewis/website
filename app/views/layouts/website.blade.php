@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<title>{{ $title }} &ndash; Jason Lewis</title>
+
+		<link rel="alternate" type="application/rss+xml" title="Jason Lewis RSS Feed" href="{{ URL::to('rss') }}" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		@stylesheets('website')
+	</head>
+
+	<body onload="prettyPrint()">
+
+		<div class="container">
+			<header>
+				<a href="{{ URL::to('/') }}"><img src="{{ URL::asset('assets/images/me.jpg') }}" /></a>
+
+				@include('layouts.partial.navigation')
+			</header>
+
+			@if (isset($nav))
+				<div class="side-nav">
+					{{ $nav }}
+				</div>
+			@endif
+
+			<div class="content">
+				{{ $content }}
+			</div>
+
+			<footer>
+				<div class="left">Copyright &copy; 2012 - {{ date('Y') }} Jason Lewis</div>
+				<div class="right"><a href="#">Back To Top</a></div>
+			</footer>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+		@javascripts('website')
+	</body>
+</html>
