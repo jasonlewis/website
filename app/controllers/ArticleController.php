@@ -1,6 +1,7 @@
 <?php
 
 use JasonLewis\Website\Articles\ArticleCollection;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class ArticleController extends BaseController {
 
@@ -25,7 +26,7 @@ class ArticleController extends BaseController {
 	{
 		if ( ! $article = $this->articles->get($slug))
 		{
-			return 'Error';
+			throw new NotFoundHttpException;
 		}
 
 		$this->layout->title = $article->getMeta('title');

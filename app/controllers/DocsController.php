@@ -1,6 +1,7 @@
 <?php 
 
 use JasonLewis\Website\Documents\DocumentCollection;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class DocsController extends BaseController {
 
@@ -34,7 +35,7 @@ class DocsController extends BaseController {
 	{
 		if ( ! $doc = $this->documents->get("{$project}/{$version}/{$page}"))
 		{
-			return 'Error';
+			throw new NotFoundHttpException;
 		}
 
 		$this->layout->title = $doc->getMeta('title');

@@ -62,6 +62,8 @@ Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
+
+	return View::make('layouts.website')->with('title', 'Page Not Found')->nest('content', '404');
 });
 
 /*
