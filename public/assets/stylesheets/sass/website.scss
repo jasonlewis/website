@@ -79,8 +79,7 @@ div.container {
 						text-transform: uppercase;
 						text-decoration: none;
 						color: #999;
-						font-size: 1em;
-						font-weight: bold;
+						font-size: 1.1em;
 						@include animation(0.3s, ease, color);
 
 						&:hover {
@@ -209,16 +208,15 @@ div.container {
 
 		h2, h3, h4, h5, h6 {
 			line-height: normal;
-			text-transform: uppercase;
 			font-weight: normal;
 			font-size: 2em;
 			margin: 16px 0;
 		}
 
 		h3 { font-size: 1.8em; }
-		h4 { font-size: 1.6em; }
-		h5 { font-size: 1.4em; }
-		h6 { font-size: 1.2em; }
+		h4 { font-size: 1.4em; font-weight: bold; }
+		h5 { font-size: 1.3em; font-weight: bold; }
+		h6 { font-size: 1.1em; font-weight: bold; }
 
 		& > div.about > img,
 		& > article.article > div.body > p > img {
