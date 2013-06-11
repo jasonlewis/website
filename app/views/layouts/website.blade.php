@@ -7,6 +7,10 @@
 		<link rel="alternate" type="application/rss+xml" title="Jason Lewis RSS Feed" href="{{ URL::to('rss') }}" />
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 		@stylesheets('website')
+
+		<script>
+			var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-30437380-1"]);_gaq.push(["_setDomainName","jasonlewis.me"]);_gaq.push(["_trackPageview"]);(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+		</script>
 	</head>
 
 	<body onload="prettyPrint()">
