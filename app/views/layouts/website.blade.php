@@ -4,6 +4,8 @@
 	<head>
 		<title>{{ $title }} &ndash; Jason Lewis</title>
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="alternate" type="application/rss+xml" title="Jason Lewis RSS Feed" href="{{ URL::to('rss') }}" />
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 		@stylesheets('website')
