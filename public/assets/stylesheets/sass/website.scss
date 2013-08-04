@@ -156,7 +156,8 @@ div.container {
 
 		p > code,
 		li > code,
-		& > code {
+		& > code,
+		a > code {
 			color: #888;
 			display: inline-block;
 			background-color: #f1f1f1;
