@@ -5,3 +5,5 @@
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule ^ index.php [L]
 </IfModule>
+
+Redirect 301 /article/laravel-4-how-to-use-packages /article/laravel-4-develop-packages-using-the-workbench
