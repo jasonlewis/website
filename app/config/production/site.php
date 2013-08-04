@@ -9,7 +9,7 @@ return array(
 	*/
 
 	'disqus' => array(
-		'shortname' => 'jasonlewis-stage'
+		'shortname' => 'jasonlewis'
 	)
 
 );
