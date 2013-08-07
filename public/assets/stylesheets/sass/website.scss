@@ -207,7 +207,7 @@ div.container {
 			}
 		}
 
-		h2, h3, h4, h5, h6 {
+		h1, h2, h3, h4, h5, h6 {
 			line-height: normal;
 			font-weight: normal;
 			font-size: 2em;
@@ -304,7 +304,17 @@ div.container {
 		&:first-of-type { margin: 0; }
 
 		header {
-			h2 {
+			color: #aaa;
+
+			time {
+				display: inline-block;
+				background-color: #f1f1f1;
+				padding: 3px 4px;
+				box-shadow: 1px 1px 0 #e1e1e1;
+				line-height: normal;
+			}
+
+			h1, h2 {
 				text-transform: none;
 				font-weight: normal;
 				font-size: 3.1em;
@@ -318,19 +328,6 @@ div.container {
 						color: #118EB3;
 					}
 				}
-			}
-		}
-
-		footer {
-			margin: 16px 0;
-			color: #aaa;
-
-			time {
-				display: inline-block;
-				background-color: #f1f1f1;
-				padding: 3px 4px;
-				box-shadow: 1px 1px 0 #e1e1e1;
-				line-height: normal;
 			}
 		}
 
