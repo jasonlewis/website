@@ -85,7 +85,7 @@ To create a shortcut to ST2 we need to create a `.desktop` file within `/usr/sha
     Version=1.0
     Name=Sublime Text 2
     Comment=Sublime Text 2
-    Exec=sublime
+    Exec=sublime_text
     Icon=/opt/Sublime Text 2/Icon/128x128/sublime_text.png
     Terminal=false
     Categories=Programming;Languages;
