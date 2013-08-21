@@ -153,9 +153,9 @@ You'll now have the window open when you close and reopen Irssi.
 
 ### notify
 
-I had a lot of trouble with this script at first. Everything was running but it wasn't sending me any notifications and for the life of me I couldn't figure it out. Then I cam across [this installer for Ubuntu](https://gist.github.com/theirishpenguin/3872398). I had actually installed the `notify-listener.py` script in `/usr/local/bin` and not in `~/bin`. This isn't a problem, but because I was running `sudo notify-listener.py` it was being run as the `root` user and not as me. Apparently this causes it to break. Simply killing the running process and running `notify-listener.py` without `sudo` was enough to get things back on track.
+I had a lot of trouble with this script at first. Everything was running but it wasn't sending me any notifications and for the life of me I couldn't figure it out. Then I came across [this installer for Ubuntu](https://gist.github.com/theirishpenguin/3872398). I had actually installed the `notify-listener.py` script in `/usr/local/bin` and not in `~/bin`. This isn't a problem, but because I was running `sudo notify-listener.py` it was being run as the `root` user and not as me. Apparently this causes it to break. Simply killing the running process and running `notify-listener.py` without `sudo` was enough to get things back on track.
 
-I then had a problem where I'd get notified a dozen times about the same thing. Rebooting my machine fixed it this issue.
+I then had a problem where I'd get notified a dozen times about the same thing. Rebooting my machine fixed this issue.
 
 ## Conclusion
 
