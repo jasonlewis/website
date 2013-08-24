@@ -55,3 +55,14 @@ It will go ahead and create the required directories, use `composer create-proje
 
 I'm sure this isn't a "one size fits all" and it certainly isn't perfect. But it's something. I'd love to hear what others are doing to quickly
 create a new project. Be sure to let me know in the comments!
+
+
+### Update: 24/08/2013
+
+Yesterday I was doing a few things in Laravel when I started getting some more permission errors. For some reason when I created directories from within my application and set the permissions to `777` they would always end up as `755` which meant that my user (who belongs to the `www-data` group) could not write to the files.
+
+As it turns out there is a default [umask](http://en.wikipedia.org/wiki/Umask) set which has a value of `022`. Basically what it means is that this number is subtracted from the permissions you set. So, in my case, I was setting the permissions to `777`, subtract `022` from that and you get `755`. The solution in this case was to set the default `umask` of Apache to `002` (this way we can also ensure others do not have write permissions). To do that on Ubuntu we can edit `/etc/apache2/envvars`, and at the bottom set the `umask`.
+
+    umask 002
+
+Save and restart Apache. You'll now be able to continue editing files as your user that were created by Apache.
