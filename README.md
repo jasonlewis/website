@@ -9,5 +9,6 @@ You can have a look at the site locally by cloning this repository and running `
 To run you'll need PHP 5.4 and Redis. If you don't have Redis you can switch the caching and session drivers.
 
 ### License
+I can change and create awesome website 
 
 The code written by me is licensed under the 2-clause BSD. Copyright 2013 Jason Lewis.
