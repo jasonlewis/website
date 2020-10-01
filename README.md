@@ -6,7 +6,7 @@ You can have a look at the site locally by cloning this repository and running `
 
 #### Requirements
 
-To run you'll need PHP 5.4 and Redis. If you don't have Redis you can switch the caching and session drivers.
+To run you'll need PHP 5.4 and upgrade . If you don't have Redis you can switch the caching and session drivers.
 
 ### License
 
